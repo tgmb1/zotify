@@ -64,7 +64,8 @@ class Zotify:
             'Authorization': f'Bearer {cls.__get_auth_token()}',
             'Accept-Language': f'{cls.CONFIG.get_language()}',
             'Accept': 'application/json',
-            'app-platform': 'WebPlayer'
+            'app-platform': 'WebPlayer',
+            'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
         }
 
     @classmethod
